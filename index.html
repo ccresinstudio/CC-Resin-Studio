@@ -12,14 +12,28 @@
       background: #fafafa;
       color: #333;
     }
-   <header style="display: flex; align-items: center; justify-content: center; background: #3d3d3d; color: white; padding: 1rem;">
-  <img src="logo.png" alt="CC Resin Studio Logo" style="height:80px; margin-right: 1rem;">
-  <div style="text-align: left;">
-    <h1 style="margin: 0; font-size: 2rem;">CC Resin Studio</h1>
-    <p style="margin: 0; font-style: italic;">Handmade Resin Art & Custom Creations</p>
-  </div>
-</header>
-
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #3d3d3d;
+      color: white;
+      padding: 1rem;
+    }
+    header img {
+      height: 80px;
+      margin-right: 1rem;
+    }
+    header div {
+      text-align: left;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0;
+      font-style: italic;
     }
     nav {
       background: #222;
@@ -69,8 +83,11 @@
 <body>
 
   <header>
-    <h1>CC Resin Studio</h1>
-    <p>Handmade Resin Art & Custom Creations</p>
+    <img src="logo.png" alt="CC Resin Studio Logo">
+    <div>
+      <h1>CC Resin Studio</h1>
+      <p>Handmade Resin Art & Custom Creations</p>
+    </div>
   </header>
 
   <nav>
@@ -81,44 +98,23 @@
 
   <section id="about">
     <h2>About Us</h2>
-    <p>Welcome to CC Resin Studio! We specialize in unique, handcrafted resin art — from jewellary to home decor. Each piece is made with love and creativity, ensuring that no two items are ever the same.</p>
+    <p>Welcome to CC Resin Studio! We specialize in unique, handcrafted resin art — from jewelry to home decor. Each piece is made with love and creativity, ensuring that no two items are ever the same.</p>
   </section>
 
   <section id="products">
     <h2>Our Products</h2>
     <div class="products">
       <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Resin Coaster">
+        <img src="coasters.jpg" alt="Resin Coaster">
         <h3>Resin Coasters</h3>
         <p>Beautiful custom resin coasters, available in many designs.</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Resin Jewelry">
+        <img src="jewelry.jpg" alt="Resin Jewelry">
         <h3>Resin Jewelry</h3>
         <p>Handmade earrings, pendants, and accessories.</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Home Decor">
+        <img src="homedecor.jpg" alt="Home Decor">
         <h3>Home Decor</h3>
-        <p>Unique resin trays, wall art, and decorative pieces.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Interested in custom pieces or placing an order? Reach out to us!</p>
-    <p><strong>Email:</strong> ccresinstudio@email.com</p>
-    <p><strong>Instagram:</strong> @ccresinstudio</p>
-  </section>
-
-  <footer>
-    <p>© 2025 CC Resin Studio | All Rights Reserved</p>
-  </footer>
-
-</body>
-</html>
-
-
-
-
+        <p>Unique resin trays, wall art, and decorative piec
