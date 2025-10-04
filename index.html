@@ -54,18 +54,24 @@
     padding: 0.5rem;
   }
   nav a {
-    color: #fff;
+    color: #fff; /* white normally */
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
   }
   nav a:hover {
-    color: #6a0dad; /* purple hover */
+    color: #6a0dad; /* purple on hover */
   }
   section {
     padding: 2rem 1rem;
     max-width: 900px;
     margin: auto;
+  }
+  section h2 {
+    color: #6a0dad; /* purple section headings */
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
   .products {
     display: grid;
@@ -84,9 +90,13 @@
     max-width: 100%;
     border-radius: 6px;
   }
+  .product h3 {
+    color: #6a0dad; /* purple product titles */
+    margin-top: 0.75rem;
+  }
   .product .price {
     font-weight: bold;
-    color: #6a0dad; /* purple accent */
+    color: #6a0dad; /* purple accent for prices */
     margin-top: 0.5rem;
   }
   footer {
@@ -101,6 +111,7 @@
     text-decoration: none;
     color: #6a0dad; /* purple for icons */
     font-weight: bold;
+    transition: color 0.3s ease;
   }
   .social-icons a:hover {
     color: #3d3d3d; /* dark grey on hover */
@@ -346,6 +357,7 @@
 
 </body>
 </html>
+
 
 
 
