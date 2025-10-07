@@ -140,13 +140,14 @@ section h2 {
 /* --- Product Galleries (Coasters & Trinket Trays) --- */
 .product-gallery {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* centers items */
-  gap: 15px;
+  flex-wrap: wrap;       /* allow items to wrap to next row */
+  justify-content: center; /* center items horizontally */
+  align-items: flex-start; /* align items at the top */
+  gap: 20px;
   margin-top: 15px;
   padding: 20px;
   border-radius: 12px;
-  background: transparent; /* remove previous gradient here */
+  background: transparent; /* gradient comes from section */
 }
 
 .product-item {
@@ -479,6 +480,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
