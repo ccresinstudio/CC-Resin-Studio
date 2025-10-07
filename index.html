@@ -182,6 +182,41 @@ nav a:hover {
   text-align: center;
   margin-top: 0.5rem;
 }
+/* Standard layout for all product galleries */
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.product-item img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.product-item .price {
+  font-weight: bold;
+  color: #6a0dad;
+  margin-top: 0.5rem;
+}
+  
 </style>
 
   </head>
@@ -454,6 +489,7 @@ nav a:hover {
 
 </body>
 </html>
+
 
 
 
