@@ -139,47 +139,46 @@ section h2 {
 
 /* --- Product Galleries (Coasters & Trinket Trays) --- */
 .product-gallery {
-  display: flex;             /* flex container */
-  flex-wrap: wrap;           /* allow items to move to next line */
-  justify-content: center;   /* center horizontally */
-  gap: 15px;                 /* space between items */
-  margin-top: 15px;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;           /* items move to next line if needed */
+  justify-content: center;   /* center the row */
+  gap: 20px;                 /* space between items */
+  padding: 30px;             /* space inside the gallery */
   border-radius: 12px;
-  background: linear-gradient(to bottom, #e6d9ff, #d4b3ff); /* soft lilac gradient behind items */
+  background: linear-gradient(to bottom, #e6d9ff, #d4b3ff); /* soft lilac gradient */
+  margin-top: 30px;
 }
-  
+
 .product-item {
+  background: white;          /* white box around each item */
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: white;        /* white box for each product */
+  width: 180px;               /* fixed width for uniformity */
+  padding: 15px;
   border-radius: 10px;
-  padding: 10px;
-  width: 150px;             /* fixed width for uniform boxes */
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .product-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
-  
+
 .product-item img {
-  width: 100%;              /* fill box width */
-  height: auto;             /* maintain aspect ratio */
-  object-fit: contain;      /* show full image without cropping */
+  width: 100%;
+  height: auto;              /* maintain aspect ratio */
+  object-fit: contain;       /* prevent cropping */
   border-radius: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .product-item .price {
   color: #9b59b6 !important;
   font-weight: bold;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 5px;
 }
 
 /* --- Footer --- */
@@ -480,6 +479,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
