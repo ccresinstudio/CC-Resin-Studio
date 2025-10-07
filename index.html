@@ -157,6 +157,146 @@ nav a:hover {
   font-weight: bold;
   text-align: center;
 }
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e6d9ff; /* richer soft lilac */
+    color: #333;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3d3d3d; /* dark header for contrast */
+    color: white;
+    padding: 1rem;
+  }
+
+  header img {
+    height: 80px;
+    margin-right: 1rem;
+  }
+
+  header div {
+    text-align: left;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  header p {
+    margin: 0;
+    font-style: italic;
+  }
+
+  nav {
+    background: #222;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+nav a {
+  color: white !important; /* force white text */
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav a:hover {
+  color: #6a0dad !important; /* purple on hover */
+  text-decoration: underline;
+}
+
+  section {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  section h2 {
+    color: #6a0dad; /* purple section headings */
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  .product img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+
+  .product h3 {
+    color: #6a0dad; /* purple product titles */
+    margin-top: 0.75rem;
+  }
+
+  .product .price {
+    font-weight: bold;
+    color: #6a0dad; /* purple accent for prices */
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    background: #3d3d3d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3d3d3d !important; /* dark grey default */
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #6a0dad !important; /* purple on hover */
+    text-decoration: underline;
+  }
+.contact-link {
+  color: #3d3d3d; /* dark grey default */
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #6a0dad; /* purple on hover */
+  text-decoration: underline;
+}
+  .product-item p.price {
+  color: #9b59b6 !important; /* matches theme purple */
+  font-weight: bold;
+  text-align: center;
+}
   /* Ensure Coasters and Trinket Trays images are the same size and centered */
 .product-item img {
   width: 100%;          /* fills the container */
@@ -218,6 +358,7 @@ nav a:hover {
 }
   
 </style>
+
 
   </head>
 <body>
@@ -494,6 +635,7 @@ nav a:hover {
 
 </body>
 </html>
+
 
 
 
