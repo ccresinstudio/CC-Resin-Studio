@@ -16,14 +16,14 @@
   
   <!-- Font Awesome for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
+  
+<style>
 /* --- General Body and Background --- */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  /* Deep lilac gradient background */
-  background: linear-gradient(to bottom, #d6b3ff, #e6d9ff);
+  background: linear-gradient(to bottom, #e6d9ff, #d4b3ff); /* soft lilac gradient */
   color: #333;
 }
 
@@ -76,36 +76,34 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* --- Sections --- */
+/* --- Section Styling --- */
 section {
-  padding: 2rem 1rem;
-  max-width: 900px;
-  margin: auto;
-  background: linear-gradient(to bottom, #e6d9ff, #d4b3ff); /* soft lilac gradient */
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 40px 20px;
+  text-align: center;
 }
 
 section h2 {
-  color: #6a0dad; /* keep your purple section headings */
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-/* --- Product Grid --- */
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
+  font-size: 2em;
+  color: #6a0dad; /* matches logo */
+  margin-bottom: 20px;
 }
 
+/* --- Product Grid (Main Products) --- */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Product Boxes */
 .product {
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -115,18 +113,69 @@ section h2 {
 }
 
 .product img {
-  max-width: 100%;
-  border-radius: 6px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
 }
 
 .product h3 {
-  color: #6a0dad;
-  margin-top: 0.75rem;
+  color: #6a1b9a;
+  margin-top: 10px;
 }
 
-.product .price {
+.product p {
+  margin: 5px 0;
+}
+
+.price {
+  color: #6a1b9a;
   font-weight: bold;
-  color: #6a0dad;
+  margin-top: 8px;
+}
+
+/* --- Product Galleries (Coasters & Trinket Trays) --- */
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  background: linear-gradient(to bottom, #e6d9ff, #d4b3ff); /* soft lilac gradient */
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.product-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.product-item .price {
+  color: #9b59b6 !important;
+  font-weight: bold;
+  text-align: center;
   margin-top: 0.5rem;
 }
 
@@ -139,7 +188,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* --- Social Links --- */
+/* --- Social Media Icons --- */
 .social-icons a, .contact-link {
   color: #3d3d3d !important;
   text-decoration: none;
@@ -151,55 +200,8 @@ footer {
   color: #6a0dad !important;
   text-decoration: underline;
 }
+</style>
 
-/* --- Product Galleries (Coasters & Trinket Trays) --- */
-.product-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.product-item {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  width: 180px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.product-item img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 6px;
-  display: block;
-  margin: 0 auto 0.5rem auto;
-}
-
-.product-item .price {
-  color: #9b59b6 !important;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-/* Softer, warmer product box styling */
-.product, .product-item {
-  background: #f7f0ff; /* warm pale lilac */
-  border: 1px solid #d3b8ff; /* soft lavender border */
-  box-shadow: 0 3px 8px rgba(106, 13, 173, 0.1); /* gentle purple shadow */
-}
-  
-  </style>
   </head>
 <body>
 
@@ -475,6 +477,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
