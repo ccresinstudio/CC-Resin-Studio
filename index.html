@@ -139,20 +139,26 @@ section h2 {
 
 /* --- Product Galleries (Coasters & Trinket Trays) --- */
 .product-gallery {
-  display: flex;
-  flex-wrap: wrap;       /* allow items to wrap to next row */
-  justify-content: center; /* center items horizontally */
-  align-items: flex-start; /* align items at the top */
-  gap: 20px;
+  display: flex;             /* flex container */
+  flex-wrap: wrap;           /* allow items to move to next line */
+  justify-content: center;   /* center horizontally */
+  gap: 15px;                 /* space between items */
   margin-top: 15px;
   padding: 20px;
   border-radius: 12px;
-  background: transparent; /* gradient comes from section */
+  background: linear-gradient(to bottom, #e6d9ff, #d4b3ff); /* soft lilac gradient behind items */
 }
-
+  
 .product-item {
-  width: 180px;           /* keep reasonable width for wrapping */
-  max-width: 100%;        /* ensures it doesn’t overflow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;        /* white box for each product */
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;             /* fixed width for uniform boxes */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -160,11 +166,11 @@ section h2 {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
-
+  
 .product-item img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
+  width: 100%;              /* fill box width */
+  height: auto;             /* maintain aspect ratio */
+  object-fit: contain;      /* show full image without cropping */
   border-radius: 8px;
   margin-bottom: 8px;
 }
@@ -474,6 +480,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
