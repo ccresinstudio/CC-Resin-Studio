@@ -3,114 +3,293 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CC Resin Studio | Autumn Resin Collection</title>
-  <link rel="stylesheet" href="style.css">
+  <title>CC Resin Studio | Autumn Creations</title>
+  <meta name="description" content="Explore CC Resin Studio's Autumn-themed resin creations — bowls, coasters, trays, and more. Handmade gifts and décor.">
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* --- General Body and Background --- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e6d9ff, #d4b3ff);
+      color: #333;
+    }
+
+    /* --- Header --- */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #3d3d3d;
+      color: white;
+      padding: 1rem;
+    }
+    header img {
+      height: 80px;
+      margin-right: 1rem;
+    }
+    header div { text-align: left; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 0; font-style: italic; }
+
+    /* --- Navigation --- */
+    nav {
+      background: #222;
+      text-align: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white !important;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+    nav a:hover {
+      color: #6a0dad !important;
+      text-decoration: underline;
+    }
+
+    /* --- Section Styling --- */
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(to bottom, #e6d9ff, #d4b3ff);
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    section h2 {
+      font-size: 2em;
+      color: #6a0dad;
+      margin-bottom: 20px;
+    }
+
+    /* --- Product Grid --- */
+    .products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      display: block;
+      max-width: 100%;
+    }
+
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      margin: 16px auto 0;
+      padding: 20px;
+      border-radius: 12px;
+      background: linear-gradient(to bottom, #d8c2ff, #b785ff);
+      width: 100%;
+      max-width: 900px;
+      box-sizing: border-box;
+    }
+
+    .product-item {
+      flex: 0 0 180px;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      border-radius: 10px;
+      padding: 12px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+      box-sizing: border-box;
+    }
+
+    .product-item img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    .product-item .price, .product .price {
+      color: #9b59b6;
+      font-weight: bold;
+      margin-top: 6px;
+      text-align: center;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #3d3d3d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .social-icons a, .contact-link {
+      color: #3d3d3d !important;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    .social-icons a:hover, .contact-link:hover {
+      color: #6a0dad !important;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-<!-- Header -->
-<header>
-  <img src="./logo.png" alt="CC Resin Studio Logo">
-  <div>
-    <h1>CC Resin Studio</h1>
-    <p>Handmade Resin Art & Custom Creations</p>
-  </div>
-</header>
-
-<!-- Navigation -->
-<nav>
-  <a href="index.html">About</a>
-  <a href="index.html#products">Products</a>
-  <a href="autumn.html">Autumn</a>
-  <a href="halloween.html">Halloween</a>
-  <a href="children.html">Children</a>
-  <a href="christmas.html">Christmas</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<!-- Autumn Products Section -->
-<section id="autumn-products">
-  <h2>Autumn Creations</h2>
-
-  <!-- Shallow Floral Dishes -->
-  <div class="product">
-    <h3>Autumn Shallow Floral Dishes</h3>
-    <p>Delicate Autumn-inspired resin dishes, perfect for displaying or gifting.</p>
-    <div class="product-gallery">
-      <div class="product-item"><img src="Aut1.jpg" alt="Autumn Shallow Floral Dish 1"><p class="price">£8</p></div>
-      <div class="product-item"><img src="Aut2.jpg" alt="Autumn Shallow Floral Dish 2"><p class="price">£8</p></div>
+  <!-- Header -->
+  <header>
+    <img src="./logo.png" alt="CC Resin Studio Logo">
+    <div>
+      <h1>CC Resin Studio</h1>
+      <p>Handmade Resin Art & Custom Creations</p>
     </div>
-  </div>
+  </header>
 
-  <!-- Autumn Trinket Trays -->
-  <div class="product">
-    <h3>Autumn Trinket Trays</h3>
-    <p>Handcrafted resin trays perfect for Autumn décor or keeping your treasures safe in style.</p>
-    <div class="product-gallery">
-      <div class="product-item"><img src="Aut3.jpg" alt="Autumn Trinket Tray 1"><p class="price">£8</p></div>
-      <div class="product-item"><img src="Aut4.jpg" alt="Autumn Trinket Tray 2"><p class="price">£8</p></div>
-    </div>
-  </div>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">About</a>
+    <a href="index.html#products">Products</a>
+    <a href="autumn.html">Autumn</a>
+    <a href="halloween.html">Halloween</a>
+    <a href="children.html">Children</a>
+    <a href="christmas.html">Christmas</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <!-- Autumn Tealight Candle Holders -->
-  <div class="product">
-    <h3>Autumn Tealight Candle Holders</h3>
-    <p>Perfect for cozy evenings and seasonal décor.</p>
-    <div class="product-gallery">
-      <div class="product-item"><img src="tealight1.jpg" alt="Autumn Tealight Candle Holder 1"><p class="price">£6</p></div>
-      <div class="product-item"><img src="tealight2.jpg" alt="Autumn Tealight Candle Holder 2"><p class="price">£6</p></div>
-    </div>
-  </div>
+  <!-- Autumn Products Section -->
+  <section id="autumn-products">
+    <h2>Autumn Creations</h2>
 
-  <!-- Autumn Coasters -->
-  <div class="product">
-    <h3>Autumn Coasters</h3>
-    <p>Bring a touch of Autumn to your table with colourful resin coasters.</p>
-    <div class="product-gallery">
-      <div class="product-item"><img src="coaster1.jpg" alt="Autumn Coaster 1"><p class="price">£8</p></div>
-      <div class="product-item"><img src="coaster2.jpg" alt="Autumn Coaster 2"><p class="price">£8</p></div>
-      <div class="product-item"><img src="coaster3.jpg" alt="Autumn Coaster 3"><p class="price">£10</p></div>
-      <div class="product-item"><img src="coaster4.jpg" alt="Autumn Coaster 4"><p class="price">£8</p></div>
-      <div class="product-item"><img src="coaster5.jpg" alt="Autumn Coaster 5"><p class="price">£8</p></div>
-      <div class="product-item"><img src="coaster6.jpg" alt="Autumn Coaster 6"><p class="price">£8</p></div>
-      <div class="product-item"><img src="coaster7.jpg" alt="Autumn Coaster 7"><p class="price">£8</p></div>
-    </div>
-  </div>
-
-  <!-- Large Autumn Bowls -->
-  <div class="product">
-    <h3>Large Autumn Bowls</h3>
-    <p>Beautiful decorative resin bowls inspired by rich Autumn colours.</p>
-    <div class="product-gallery">
-      <div class="product-item"><img src="ABowl1.jpg" alt="Large Autumn Bowl 1"><p class="price">£25</p></div>
-      <div class="product-item"><img src="ABowl2.jpg" alt="Large Autumn Bowl 2"><p class="price">£25</p></div>
-      <div class="product-item"><img src="ABowl3.jpg" alt="Large Autumn Bowl 3"><p class="price">£25</p></div>
-    </div>
-  </div>
-
-</section>
-
-<!-- Other Collections Teaser Section -->
-<section id="seasonal-teasers">
-  <h2>Explore Our Other Collections</h2>
-  <div class="products">
+    <!-- Shallow Floral Dishes -->
     <div class="product">
-      <img src="Halloweentease.jpg" alt="Halloween Collection">
-      <h3>Halloween</h3>
-      <p>Check out our spooky seasonal creations.</p>
+      <h3>Autumn Shallow Floral Dishes</h3>
+      <p>Delicate Autumn-inspired resin dishes, perfect for displaying or gifting.</p>
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="Aut1.jpg" alt="Autumn Shallow Floral Dish 1">
+          <p class="price">£8</p>
+        </div>
+        <div class="product-item">
+          <img src="Aut2.jpg" alt="Autumn Shallow Floral Dish 2">
+          <p class="price">£8</p>
+        </div>
+      </div>
     </div>
+
+    <!-- Autumn Trinket Trays -->
     <div class="product">
-      <img src="Childrenstease.jpg" alt="Children's Collection">
-      <h3>Children's</h3>
-      <p>Fun resin items designed for kids.</p>
+      <h3>Autumn Trinket Trays</h3>
+      <p>Handcrafted resin trays perfect for Autumn décor or keeping your treasures safe in style.</p>
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="Aut3.jpg" alt="Autumn Trinket Tray 1">
+          <p class="price">£8</p>
+        </div>
+        <div class="product-item">
+          <img src="Aut4.jpg" alt="Autumn Trinket Tray 2">
+          <p class="price">£8</p>
+        </div>
+      </div>
     </div>
+
+    <!-- Autumn Tealight Candle Holders -->
     <div class="product">
-      <img src="Christmastease.jpg" alt="Christmas Collection">
-      <h3>Christmas</h3>
-      <p>Festive resin pieces for the holidays.</p>
+      <h3>Autumn Tealight Candle Holders</h3>
+      <p>Set the mood this Autumn with our charming resin tealight holders, perfect for cozy evenings and seasonal décor.</p>
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="tealight1.jpg" alt="Autumn Tealight Candle Holder 1">
+          <p class="price">£6</p>
+        </div>
+        <div class="product-item">
+          <img src="tealight2.jpg" alt="Autumn Tealight Candle Holder 2">
+          <p class="price">£6</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+
+    <!-- Autumn Coasters -->
+    <div class="product">
+      <h3>Autumn Coasters</h3>
+      <p>Bring a touch of Autumn to your table with our colourful resin coasters, perfect for drinks or display.</p>
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="coaster1.jpg" alt="Autumn Coaster 1">
+          <p class="price">£8</p>
+        </div>
+        <div class="product-item">
+          <img src="coaster2.jpg" alt="Autumn Coaster 2">
+          <p class="price">£8</p>
+        </div>
+        <div class="product-item">
+          <img src="coaster3.jpg" alt="Autumn Coaster 3">
+          <p class="price">£10</p>
+        </div>
+        <div class="product-item">
+          <img src="coaster4.jpg" alt="Autumn Coaster 4">
+          <p class="price">£8</p>
+        </div>
+        <div class="product-item">
+          <img src="coaster5.jpg" alt="Autumn Coaster 5">
+          <p class="price">£8</p>
+        </div>
+        <div class="product-item">
+          <img src="coaster6.jpg" alt="Autumn Coaster 6">
+          <p class="price">£8</p>
+        </div>
+        <div class="product-item">
+          <img src="coaster7.jpg" alt="Autumn Coaster 7">
+          <p class="price">£8</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Large Autumn Bowls -->
+    <div class="product">
+      <h3>Large Autumn Bowls</h3>
+      <p>Beautiful, decorative resin bowls inspired by the rich colours of Autumn — ideal as centrepieces or statement home décor.</p>
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="ABowl1.jpg" alt="Large Autumn Bowl 1">
+          <p class="price">£25</p>
+        </div>
+        <div class="product-item">
+          <img src="ABowl2.jpg" alt="Large Autumn Bowl 2">
+          <p class="price">£25</p>
+        </div>
+        <div class="product-item">
+          <img src="ABowl3.jpg" alt="Large Autumn Bowl 3">
+          <p class="price">£25</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CC Resin Studio | Handmade Resin Art & Gifts</p>
+  </footer>
 
 </body>
 </html>
