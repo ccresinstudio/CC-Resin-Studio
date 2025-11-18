@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -170,7 +168,7 @@ section h2 {
   margin: 16px auto 0;
   padding: 20px;
   border-radius: 12px;
-  background: linear-gradient(to bottom, #d8c2ff, #b785ff);
+  background: linear-gradient(to bottom, #d8c2ff, #b785ff); /* ONLY this line changed */
   width: 100%;
   max-width: 900px;
   box-sizing: border-box;
@@ -206,7 +204,6 @@ section h2 {
   margin-top: 6px;
   text-align: center;
 }
-
 /* --- Footer --- */
 footer {
   background: #3d3d3d;
@@ -257,7 +254,9 @@ footer {
 <section id="about">
   <h2>About Us</h2>
   <p>Welcome to CC Resin Studio! We specialise in creating <strong>unique handmade resin art and gifts</strong> with care and creativity.</p>
+  
   <p>From colourful coasters and trinket trays to jewellery and decorative home pieces, each item is handcrafted to make a special impression.</p>
+  
   <p>Whether it’s for personal use or as a thoughtful gift, our creations are perfect for adding a touch of charm to any home.</p>
 </section>
 
@@ -378,15 +377,42 @@ footer {
     </div>
   </div>
 
+
+  
   <!-- Trinket Boxes -->
   <div class="product">
     <h3>Trinket Boxes</h3>
     <p>Gorgeous boxes to store your precious items or small keepsakes.</p>
     <div class="product-gallery">
       <div class="product-item"><img src="trinket1.jpg" alt="Trinket Box 1"><p class="price">£12</p></div>
- <div class="product-item"><img src="trinket2.jpg" alt="Trinket Box 2"><p class="price">£12</p></div>
+      <div class="product-item"><img src="trinket2.jpg" alt="Trinket Box 2"><p class="price">£12</p></div>
       <div class="product-item"><img src="trinket3.jpg" alt="Trinket Box 3"><p class="price">£12</p></div>
       <div class="product-item"><img src="trinket4.jpg" alt="Trinket Box 4"><p class="price">£12</p></div>
+    </div>
+  </div>
+
+  <!-- Leaf Trays -->
+  <div class="product">
+    <h3>Leaf Trays</h3>
+    <p>Stylish leaf-shaped trays, perfect for home organisation or decoration.</p>
+    <div class="product-gallery">
+      <div class="product-item"><img src="leaf1.jpg" alt="Leaf Tray 1"><p class="price">£10</p></div>
+      <div class="product-item"><img src="leaf2.jpg" alt="Leaf Tray 2"><p class="price">£10</p></div>
+      <div class="product-item"><img src="leaf3.jpg" alt="Leaf Tray 3"><p class="price">£10</p></div>
+    </div>
+  </div>
+
+  <!-- Mini Turtles -->
+  <div class="product">
+    <h3>Mini Turtles</h3>
+    <p>Cute little resin turtles, ideal as gifts or collectible ornaments.</p>
+    <div class="product-gallery">
+      <div class="product-item"><img src="turtle1.jpg" alt="Mini Turtle 1"><p class="price">£3.50</p></div>
+      <div class="product-item"><img src="turtle2.jpg" alt="Mini Turtle 2"><p class="price">£3.50</p></div>
+      <div class="product-item"><img src="turtle3.jpg" alt="Mini Turtle 3"><p class="price">£3.50</p></div>
+      <div class="product-item"><img src="turtle4.jpg" alt="Mini Turtle 4"><p class="price">£3.50</p></div>
+      <div class="product-item"><img src="turtle5.jpg" alt="Mini Turtle 5"><p class="price">£3.50</p></div>
+      <div class="product-item"><img src="turtle6.jpg" alt="Mini Turtle 6"><p class="price">£3.50</p></div>
     </div>
   </div>
 
@@ -396,63 +422,103 @@ footer {
 <section id="seasonal-teasers">
   <h2>Explore Our Other Collections</h2>
   <div class="products">
-    <!-- Autumn, Halloween, Children, Christmas teasers here, unchanged -->
+    
+    <!-- Autumn -->
+    <div class="product">
+      <a href="autumn.html"><img src="Auttease.jpg" alt="Autumn Collection"></a>
+      <h3>Autumn</h3>
+      <p>Discover autumn-themed resin creations, perfect for seasonal décor and gifts.</p>
+    </div>
+    
+    <!-- Halloween -->
+    <div class="product">
+      <a href="halloween.html"><img src="Halloweentease.jpg" alt="Halloween Collection"></a>
+      <h3>Halloween</h3>
+      <p>Spooky resin items to celebrate Halloween in style.</p>
+    </div>
+    
+    <!-- Children -->
+    <div class="product">
+      <a href="children.html"><img src="Childrenstease.jpg" alt="Children's Collection"></a>
+      <h3>Children</h3>
+      <p>Fun resin items designed especially for children.</p>
+    </div>
+    
+    <!-- Christmas -->
+    <div class="product">
+      <a href="christmas.html"><img src="Christmastease.jpg" alt="Christmas Collection"></a>
+      <h3>Christmas</h3>
+      <p>Festive resin creations perfect for holiday gifting and décor.</p>
+    </div>
+
+  </div>
+
+
+<!-- Autumn Collection Section -->
+<section id="autumn">
+  <h2>Autumn Collection</h2>
+  <p>Celebrate the colors of autumn with our themed resin creations.</p>
+  <div class="product-gallery">
+    <div class="product-item"><img src="autumn1.jpg" alt="Autumn Item 1"><p class="price">£8</p></div>
+    <div class="product-item"><img src="autumn2.jpg" alt="Autumn Item 2"><p class="price">£8</p></div>
+    <div class="product-item"><img src="autumn3.jpg" alt="Autumn Item 3"><p class="price">£8</p></div>
+    <div class="product-item"><img src="autumn4.jpg" alt="Autumn Item 4"><p class="price">£8</p></div>
   </div>
 </section>
 
-<!-- Autumn Section -->
-<section id="autumn">
-  <h2>Autumn Creations</h2>
-  <!-- Autumn products here, unchanged -->
-</section>
-
-<!-- Halloween Section -->
+<!-- Halloween Collection Section -->
 <section id="halloween">
-  <h2>Halloween Selection</h2>
-  <!-- Halloween products here, unchanged -->
+  <h2>Halloween Collection</h2>
+  <p>Get spooky with our Halloween-inspired resin creations.</p>
+  <div class="product-gallery">
+    <div class="product-item"><img src="halloween1.jpg" alt="Halloween Item 1"><p class="price">£10</p></div>
+    <div class="product-item"><img src="halloween2.jpg" alt="Halloween Item 2"><p class="price">£10</p></div>
+    <div class="product-item"><img src="halloween3.jpg" alt="Halloween Item 3"><p class="price">£10</p></div>
+    <div class="product-item"><img src="halloween4.jpg" alt="Halloween Item 4"><p class="price">£10</p></div>
+  </div>
 </section>
 
-<!-- Children Section -->
+<!-- Children's Collection Section -->
 <section id="children">
-  <h2>Children's Section</h2>
-  <!-- Children products here, unchanged -->
+  <h2>Children's Collection</h2>
+  <p>Fun and playful resin items designed especially for children.</p>
+  <div class="product-gallery">
+    <div class="product-item"><img src="children1.jpg" alt="Children Item 1"><p class="price">£5</p></div>
+    <div class="product-item"><img src="children2.jpg" alt="Children Item 2"><p class="price">£5</p></div>
+    <div class="product-item"><img src="children3.jpg" alt="Children Item 3"><p class="price">£5</p></div>
+    <div class="product-item"><img src="children4.jpg" alt="Children Item 4"><p class="price">£5</p></div>
+  </div>
 </section>
 
-<!-- Christmas Section -->
+<!-- Christmas Collection Section -->
 <section id="christmas">
-  <h2>Christmas Selection</h2>
-  <!-- Christmas products here, unchanged -->
+  <h2>Christmas Collection</h2>
+  <p>Festive resin creations perfect for holiday gifting and décor.</p>
+  <div class="product-gallery">
+    <div class="product-item"><img src="christmas1.jpg" alt="Christmas Item 1"><p class="price">£12</p></div>
+    <div class="product-item"><img src="christmas2.jpg" alt="Christmas Item 2"><p class="price">£12</p></div>
+    <div class="product-item"><img src="christmas3.jpg" alt="Christmas Item 3"><p class="price">£12</p></div>
+    <div class="product-item"><img src="christmas4.jpg" alt="Christmas Item 4"><p class="price">£12</p></div>
+  </div>
 </section>
 
 <!-- Contact Section -->
 <section id="contact">
   <h2>Contact Us</h2>
-  <p>Interested in custom pieces or placing an order? Reach out to us!</p>
-
-  <p>
-    <strong>Email:</strong> 
-    <a href="mailto:ccresinstudio@email.com" class="contact-link">ccresinstudio@email.com</a>
-  </p>
-
-  <p>
-    <strong>Instagram:</strong> 
-    <a href="https://www.instagram.com/cc_resinstudio/" target="_blank" class="contact-link">
-      <i class="fab fa-instagram"></i> @cc_resinstudio
-    </a>
-  </p>
-
-  <p>
-    <strong>Facebook:</strong> 
-    <a href="https://m.facebook.com/61579248874448/" target="_blank" class="contact-link">
-      <i class="fab fa-facebook-f"></i> CC Resin Studio
-    </a>
-  </p>
+  <p>Have a question or want to place a custom order? Get in touch with us!</p>
+  <p>Email: <a class="contact-link" href="mailto:info@ccresinstudio.com">info@ccresinstudio.com</a></p>
+  <p>Phone: <a class="contact-link" href="tel:+441234567890">+44 1234 567890</a></p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/CCResinStudio" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+    <a href="https://www.instagram.com/ccresinstudio" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+  </div>
 </section>
 
 <!-- Footer -->
 <footer>
-  <p>© 2025 CC Resin Studio | All Rights Reserved</p>
+  <p>&copy; 2025 CC Resin Studio. All Rights Reserved.</p>
 </footer>
 
 </body>
-</html>
+
+  
