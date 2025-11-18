@@ -4,60 +4,139 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | CC Resin Studio</title>
-  <link rel="stylesheet" href="style.css"> <!-- keep your existing CSS -->
+  <meta name="description" content="Contact CC Resin Studio for custom handmade resin art, gifts, coasters, trays, and jewellery.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e6d9ff, #d4b3ff);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #3d3d3d;
+      color: white;
+      padding: 1rem;
+    }
+
+    header img { height: 80px; margin-right: 1rem; }
+    header div { text-align: left; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 0; font-style: italic; }
+
+    nav {
+      background: #222;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white !important;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #6a0dad !important;
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(to bottom, #e6d9ff, #d4b3ff);
+      border-radius: 12px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-sizing: border-box;
+    }
+
+    section h2 {
+      font-size: 2em;
+      color: #6a0dad;
+      margin-bottom: 20px;
+    }
+
+    .contact-link {
+      color: #3d3d3d !important;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    .contact-link:hover {
+      color: #6a0dad !important;
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #3d3d3d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
 
-<!-- Header -->
-<header>
-  <img src="./logo.png" alt="CC Resin Studio Logo">
-  <div>
-    <h1>CC Resin Studio</h1>
-    <p>Handmade Resin Art & Custom Creations</p>
-  </div>
-</header>
+  <!-- Header -->
+  <header>
+    <img src="./logo.png" alt="CC Resin Studio Logo">
+    <div>
+      <h1>CC Resin Studio</h1>
+      <p>Handmade Resin Art & Custom Creations</p>
+    </div>
+  </header>
 
-<!-- Navigation -->
-<nav>
-  <a href="index.html">About</a>
-  <a href="index.html#products">Products</a>
-  <a href="autumn.html">Autumn</a>
-  <a href="halloween.html">Halloween</a>
-  <a href="children.html">Children</a>
-  <a href="christmas.html">Christmas</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">About</a>
+    <a href="index.html#products">Products</a>
+    <a href="autumn.html">Autumn</a>
+    <a href="halloween.html">Halloween</a>
+    <a href="children.html">Children</a>
+    <a href="christmas.html">Christmas</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<!-- Contact Section (copied from homepage) -->
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Interested in custom pieces or placing an order? Reach out to us!</p>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Interested in custom pieces or placing an order? Reach out to us!</p>
 
-  <p>
-    <strong>Email:</strong> 
-    <a href="mailto:ccresinstudio@email.com" class="contact-link">ccresinstudio@email.com</a>
-  </p>
+    <p>
+      <strong>Email:</strong> 
+      <a href="mailto:ccresinstudio@email.com" class="contact-link">ccresinstudio@email.com</a>
+    </p>
 
-  <p>
-    <strong>Instagram:</strong> 
-    <a href="https://www.instagram.com/cc_resinstudio/" target="_blank" class="contact-link">
-      <i class="fab fa-instagram"></i> @cc_resinstudio
-    </a>
-  </p>
+    <p>
+      <strong>Instagram:</strong> 
+      <a href="https://www.instagram.com/cc_resinstudio/" target="_blank" class="contact-link">
+        <i class="fab fa-instagram"></i> @cc_resinstudio
+      </a>
+    </p>
 
-  <p>
-    <strong>Facebook:</strong> 
-    <a href="https://m.facebook.com/61579248874448/" target="_blank" class="contact-link">
-      <i class="fab fa-facebook-f"></i> CC Resin Studio
-    </a>
-  </p>
-</section>
+    <p>
+      <strong>Facebook:</strong> 
+      <a href="https://m.facebook.com/61579248874448/" target="_blank" class="contact-link">
+        <i class="fab fa-facebook-f"></i> CC Resin Studio
+      </a>
+    </p>
+  </section>
 
-<!-- Footer -->
-<footer>
-  <p>© 2025 CC Resin Studio | All Rights Reserved</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CC Resin Studio | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
