@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
+    /* --- General Body and Background --- */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -27,6 +28,7 @@
       color: #333;
     }
 
+    /* --- Header --- */
     header {
       display: flex;
       align-items: center;
@@ -55,6 +57,7 @@
       font-style: italic;
     }
 
+    /* --- Navigation --- */
     nav {
       background: #222;
       text-align: center;
@@ -88,6 +91,7 @@
       margin-bottom: 20px;
     }
 
+    /* --- Product Grid --- */
     .products {
       display: flex;
       flex-direction: column;
@@ -102,10 +106,9 @@
       border-radius: 12px;
       padding: 20px;
       width: 100%;
-      box-sizing: border-box;
-      text-align: center;
-      display: block;
       max-width: 100%;
+      text-align: center;
+      box-sizing: border-box;
     }
 
     .product-gallery {
@@ -144,13 +147,14 @@
       margin-bottom: 8px;
     }
 
-    .price {
+    .product-item .price, .product .price {
       color: #9b59b6;
       font-weight: bold;
       margin-top: 6px;
       text-align: center;
     }
 
+    /* --- Footer --- */
     footer {
       background: #3d3d3d;
       color: white;
@@ -159,6 +163,7 @@
       margin-top: 2rem;
     }
 
+    /* --- Social Media Icons --- */
     .social-icons a, .contact-link {
       color: #3d3d3d !important;
       text-decoration: none;
@@ -206,7 +211,10 @@
   <section id="products">
     <h2>Our Products</h2>
 
-    <!-- Example Product: Coasters -->
+    <!-- Place all your original product categories and galleries here exactly as before -->
+    <!-- Coasters, Trinket Trays, Heart Dishes, Jars, Pyramids, Floral Dishes, Large Floral Bowls, Cups & Saucers, Ring Holders, Trinket Boxes, Leaf Trays, Mini Turtles -->
+
+    <!-- Example for Coasters -->
     <div class="product">
       <h3>Coasters</h3>
       <p>Beautiful custom resin coasters, available in many shapes and designs.</p>
@@ -219,28 +227,34 @@
       </div>
     </div>
 
-    <!-- Other products remain here similarly... -->
+    <!-- Repeat for each product category exactly as in your current homepage -->
+    <!-- ... -->
+
   </section>
 
-  <!-- Seasonal Teasers Section -->
+  <!-- Other Collections Teaser Section -->
   <section id="seasonal-teasers">
     <h2>Explore Our Other Collections</h2>
     <div class="products">
+      <!-- Autumn -->
       <div class="product">
         <a href="autumn.html"><img src="Auttease.jpg" alt="Autumn Collection"></a>
         <h3>Autumn</h3>
         <p>Discover autumn-themed resin creations, perfect for seasonal décor and gifts.</p>
       </div>
+      <!-- Halloween -->
       <div class="product">
         <a href="halloween.html"><img src="Halloweentease.jpg" alt="Halloween Collection"></a>
         <h3>Halloween</h3>
         <p>Spooky resin items to celebrate Halloween in style.</p>
       </div>
+      <!-- Children -->
       <div class="product">
         <a href="children.html"><img src="Childrenstease.jpg" alt="Children's Collection"></a>
         <h3>Children</h3>
         <p>Fun resin items designed especially for children.</p>
       </div>
+      <!-- Christmas -->
       <div class="product">
         <a href="christmas.html"><img src="Christmastease.jpg" alt="Christmas Collection"></a>
         <h3>Christmas</h3>
@@ -253,9 +267,25 @@
   <section id="contact">
     <h2>Contact Us</h2>
     <p>Interested in custom pieces or placing an order? Reach out to us!</p>
-    <p><strong>Email:</strong> <a href="mailto:ccresinstudio@email.com" class="contact-link">ccresinstudio@email.com</a></p>
-    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/cc_resinstudio/" target="_blank" class="contact-link"><i class="fab fa-instagram"></i> @cc_resinstudio</a></p>
-    <p><strong>Facebook:</strong> <a href="https://m.facebook.com/61579248874448/" target="_blank" class="contact-link"><i class="fab fa-facebook-f"></i> CC Resin Studio</a></p>
+
+    <p>
+      <strong>Email:</strong> 
+      <a href="mailto:ccresinstudio@email.com" class="contact-link">ccresinstudio@email.com</a>
+    </p>
+
+    <p>
+      <strong>Instagram:</strong> 
+      <a href="https://www.instagram.com/cc_resinstudio/" target="_blank" class="contact-link">
+        <i class="fab fa-instagram"></i> @cc_resinstudio
+      </a>
+    </p>
+
+    <p>
+      <strong>Facebook:</strong> 
+      <a href="https://m.facebook.com/61579248874448/" target="_blank" class="contact-link">
+        <i class="fab fa-facebook-f"></i> CC Resin Studio
+      </a>
+    </p>
   </section>
 
   <!-- Footer -->
@@ -265,8 +295,6 @@
 
 </body>
 </html>
-
-
 
 
 
