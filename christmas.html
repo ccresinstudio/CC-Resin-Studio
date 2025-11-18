@@ -4,11 +4,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CC Resin Studio | Christmas Collection</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- General Body and Background --- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e6d9ff, #d4b3ff);
+      color: #333;
+    }
+
+    /* --- Header --- */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #3d3d3d;
+      color: white;
+      padding: 1rem;
+    }
+
+    header img {
+      height: 80px;
+      margin-right: 1rem;
+    }
+
+    header div {
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      font-style: italic;
+    }
+
+    /* --- Navigation --- */
+    nav {
+      background: #222;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white !important;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #6a0dad !important;
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(to bottom, #e6d9ff, #d4b3ff);
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    section h2 {
+      font-size: 2em;
+      color: #6a0dad;
+      margin-bottom: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 24px auto;
+      box-sizing: border-box;
+    }
+
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 16px;
+    }
+
+    .product-item {
+      flex: 0 0 180px;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      border-radius: 10px;
+      padding: 12px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+      box-sizing: border-box;
+    }
+
+    .product-item img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: #9b59b6;
+      font-weight: bold;
+      margin-top: 6px;
+      text-align: center;
+    }
+
+    footer {
+      background: #3d3d3d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
 
-<!-- Header -->
 <header>
   <img src="./logo.png" alt="CC Resin Studio Logo">
   <div>
@@ -17,7 +142,6 @@
   </div>
 </header>
 
-<!-- Navigation -->
 <nav>
   <a href="index.html">About</a>
   <a href="index.html#products">Products</a>
@@ -28,14 +152,12 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<!-- Christmas Section -->
-<section id="christmas">
+<section id="christmas-products">
   <h2>Christmas Collection</h2>
 
   <!-- Angels -->
   <div class="product">
     <h3>Angels</h3>
-    <p>Delicate resin angels, perfect for gifting or decoration.</p>
     <div class="product-gallery">
       <div class="product-item"><img src="angel1.jpg" alt="Angel 1"><p class="price">£4.50</p></div>
       <div class="product-item"><img src="angel2.jpg" alt="Angel 2"><p class="price">£4.50</p></div>
@@ -47,18 +169,16 @@
   <!-- Tealight Holders -->
   <div class="product">
     <h3>Tealight Holders</h3>
-    <p>Festive holders with included tealight candles.</p>
     <div class="product-gallery">
-      <div class="product-item"><img src="christmascandle1.jpg" alt="Tealight 1"><p class="price">£6</p></div>
-      <div class="product-item"><img src="christmascandle2.jpg" alt="Tealight 2"><p class="price">£6</p></div>
-      <div class="product-item"><img src="christmascandle3.jpg" alt="Tealight 3"><p class="price">£6</p></div>
+      <div class="product-item"><img src="christmascandle1.jpg" alt="Tealight Holder 1"><p class="price">£6</p></div>
+      <div class="product-item"><img src="christmascandle2.jpg" alt="Tealight Holder 2"><p class="price">£6</p></div>
+      <div class="product-item"><img src="christmascandle3.jpg" alt="Tealight Holder 3"><p class="price">£6</p></div>
     </div>
   </div>
 
   <!-- Christmas Trees -->
   <div class="product">
     <h3>Christmas Trees</h3>
-    <p>Resin Christmas tree decorations.</p>
     <div class="product-gallery">
       <div class="product-item"><img src="tree1.jpg" alt="Tree 1"><p class="price">£8</p></div>
       <div class="product-item"><img src="tree2.jpg" alt="Tree 2"><p class="price">£8</p></div>
@@ -70,7 +190,6 @@
   <!-- Coasters -->
   <div class="product">
     <h3>Coasters</h3>
-    <p>Festive resin coasters.</p>
     <div class="product-gallery">
       <div class="product-item"><img src="christmascoaster1.jpg" alt="Coaster 1"><p class="price">£3.50</p></div>
       <div class="product-item"><img src="christmascoaster2.jpg" alt="Coaster 2"><p class="price">£3.50</p></div>
@@ -81,19 +200,17 @@
   <!-- Gingerbread People -->
   <div class="product">
     <h3>Gingerbread People</h3>
-    <p>Deliciously themed resin gingerbread decorations.</p>
     <div class="product-gallery">
-      <div class="product-item"><img src="ginger1.jpg" alt="Gingerbread 1"><p class="price">£4.50 each / £8 per pair</p></div>
-      <div class="product-item"><img src="ginger2.jpg" alt="Gingerbread 2"><p class="price">£4.50 each / £8 per pair</p></div>
-      <div class="product-item"><img src="ginger3.jpg" alt="Gingerbread 3"><p class="price">£4.50 each / £8 per pair</p></div>
-      <div class="product-item"><img src="ginger4.jpg" alt="Gingerbread 4"><p class="price">£4.50 each / £8 per pair</p></div>
+      <div class="product-item"><img src="ginger1.jpg" alt="Gingerbread 1"><p class="price">£4.50</p></div>
+      <div class="product-item"><img src="ginger2.jpg" alt="Gingerbread 2"><p class="price">£4.50</p></div>
+      <div class="product-item"><img src="ginger3.jpg" alt="Gingerbread 3"><p class="price">£4.50</p></div>
+      <div class="product-item"><img src="ginger4.jpg" alt="Gingerbread 4"><p class="price">£4.50</p></div>
     </div>
   </div>
 
   <!-- Pens -->
   <div class="product">
     <h3>Pens</h3>
-    <p>Festive resin pens for gifts or stationary.</p>
     <div class="product-gallery">
       <div class="product-item"><img src="pen1.jpg" alt="Pen 1"><p class="price">£4</p></div>
       <div class="product-item"><img src="pen2.jpg" alt="Pen 2"><p class="price">£4</p></div>
@@ -105,7 +222,6 @@
   <!-- Snowmen -->
   <div class="product">
     <h3>Snowmen</h3>
-    <p>Festive resin snowmen decorations.</p>
     <div class="product-gallery">
       <div class="product-item"><img src="snowman1.jpg" alt="Snowman 1"><p class="price">£10</p></div>
       <div class="product-item"><img src="snowman2.jpg" alt="Snowman 2"><p class="price">£10</p></div>
@@ -115,61 +231,61 @@
   <!-- Trinket Trays -->
   <div class="product">
     <h3>Trinket Trays</h3>
-    <p>Festive trays for gifts or home organisation.</p>
     <div class="product-gallery">
-      <div class="product-item"><img src="christmastrinket1.jpg" alt="Trinket 1"><p class="price">£10</p></div>
-      <div class="product-item"><img src="christmastrinket2.jpg" alt="Trinket 2"><p class="price">£10</p></div>
-      <div class="product-item"><img src="christmastrinket3.jpg" alt="Trinket 3"><p class="price">£10</p></div>
+      <div class="product-item"><img src="christmastrinket1.jpg" alt="Trinket Tray 1"><p class="price">£10</p></div>
+      <div class="product-item"><img src="christmastrinket2.jpg" alt="Trinket Tray 2"><p class="price">£10</p></div>
+      <div class="product-item"><img src="christmastrinket3.jpg" alt="Trinket Tray 3"><p class="price">£10</p></div>
     </div>
   </div>
 
   <!-- Shallow Floral Dish -->
   <div class="product">
     <h3>Shallow Floral Dish</h3>
-    <p>Perfect for festive displays.</p>
     <div class="product-gallery">
-      <div class="product-item"><img src="christmasshallow1.jpg" alt="Shallow Dish"><p class="price">£8</p></div>
+      <div class="product-item"><img src="christmasshallow1.jpg" alt="Shallow Dish 1"><p class="price">£8</p></div>
     </div>
   </div>
 
   <!-- Christmas Bowl -->
   <div class="product">
     <h3>Christmas Bowl</h3>
-    <p>Large decorative Christmas bowl.</p>
     <div class="product-gallery">
-      <div class="product-item"><img src="christmasbowl1.jpg" alt="Christmas Bowl"><p class="price">£25</p></div>
+      <div class="product-item"><img src="christmasbowl1.jpg" alt="Christmas Bowl 1"><p class="price">£25</p></div>
     </div>
   </div>
 
   <!-- Christmas Tray -->
   <div class="product">
     <h3>Christmas Tray</h3>
-    <p>Large decorative tray for festive use.</p>
     <div class="product-gallery">
-      <div class="product-item"><img src="christmastray1.jpg" alt="Christmas Tray"><p class="price">£15</p></div>
+      <div class="product-item"><img src="christmastray1.jpg" alt="Christmas Tray 1"><p class="price">£15</p></div>
     </div>
   </div>
 
   <!-- Christmas Tree Decorations -->
   <div class="product">
     <h3>Christmas Tree Decorations</h3>
-    <p>Various themed decorations for your tree.</p>
-    <div class="product-gallery">
-      <!-- Small Snowflakes -->
-      <div class="product-item"><img src="snowflakes1.jpg" alt="Small Snowflake 1"><p class="price">£3.50 each / 2 for £6</p></div>
-      <div class="product-item"><img src="snowflakes2.jpg" alt="Small Snowflake 2"><p class="price">£3.50 each / 2 for £6</p></div>
-      <div class="product-item"><img src="snowflakes3.jpg" alt="Small Snowflake 3"><p class="price">£3.50 each / 2 for £6</p></div>
-      <div class="product-item"><img src="snowflakes4.jpg" alt="Small Snowflake 4"><p class="price">£3.50 each / 2 for £6</p></div>
 
-      <!-- Large Snowflakes -->
+    <!-- Assorted Small Snowflakes -->
+    <div class="product-gallery">
+      <div class="product-item"><img src="snowflakes1.jpg" alt="Small Snowflake 1"><p class="price">£3.50 or 2 for £6</p></div>
+      <div class="product-item"><img src="snowflakes2.jpg" alt="Small Snowflake 2"><p class="price">£3.50 or 2 for £6</p></div>
+      <div class="product-item"><img src="snowflakes3.jpg" alt="Small Snowflake 3"><p class="price">£3.50 or 2 for £6</p></div>
+      <div class="product-item"><img src="snowflakes4.jpg" alt="Small Snowflake 4"><p class="price">£3.50 or 2 for £6</p></div>
+    </div>
+
+    <!-- Large Snowflakes -->
+    <div class="product-gallery">
       <div class="product-item"><img src="largesnowflake1.jpg" alt="Large Snowflake 1"><p class="price">£8</p></div>
       <div class="product-item"><img src="largesnowflake2.jpg" alt="Large Snowflake 2"><p class="price">£8</p></div>
       <div class="product-item"><img src="largesnowflake3.jpg" alt="Large Snowflake 3"><p class="price">£8</p></div>
       <div class="product-item"><img src="largesnowflake4.jpg" alt="Large Snowflake 4"><p class="price">£8</p></div>
       <div class="product-item"><img src="largesnowflake5.jpg" alt="Large Snowflake 5"><p class="price">£8</p></div>
       <div class="product-item"><img src="largesnowflake6.jpg" alt="Large Snowflake 6"><p class="price">£8</p></div>
+    </div>
 
-      <!-- Reindeers -->
+    <!-- Reindeers -->
+    <div class="product-gallery">
       <div class="product-item"><img src="reindeer1.jpg" alt="Reindeer 1"><p class="price">£3.50</p></div>
       <div class="product-item"><img src="reindeer2.jpg" alt="Reindeer 2"><p class="price">£3.50</p></div>
       <div class="product-item"><img src="reindeer3.jpg" alt="Reindeer 3"><p class="price">£3.50</p></div>
@@ -177,8 +293,10 @@
       <div class="product-item"><img src="reindeer5.jpg" alt="Reindeer 5"><p class="price">£3.50</p></div>
       <div class="product-item"><img src="reindeer6.jpg" alt="Reindeer 6"><p class="price">£3.50</p></div>
       <div class="product-item"><img src="reindeer7.jpg" alt="Reindeer 7"><p class="price">£3.50</p></div>
+    </div>
 
-      <!-- Bauble shaped -->
+    <!-- Bauble shaped -->
+    <div class="product-gallery">
       <div class="product-item"><img src="bauble1.jpg" alt="Bauble 1"><p class="price">£4</p></div>
       <div class="product-item"><img src="bauble2.jpg" alt="Bauble 2"><p class="price">£4</p></div>
       <div class="product-item"><img src="bauble3.jpg" alt="Bauble 3"><p class="price">£4</p></div>
@@ -193,22 +311,27 @@
       <div class="product-item"><img src="bauble12.jpg" alt="Bauble 12"><p class="price">£4</p></div>
       <div class="product-item"><img src="bauble13.jpg" alt="Bauble 13"><p class="price">£4</p></div>
       <div class="product-item"><img src="bauble14.jpg" alt="Bauble 14"><p class="price">£4</p></div>
+    </div>
 
-      <!-- Fairy Light shaped -->
+    <!-- Fairy Light shaped -->
+    <div class="product-gallery">
       <div class="product-item"><img src="fairylight1.jpg" alt="Fairy Light 1"><p class="price">£4</p></div>
       <div class="product-item"><img src="fairylight2.jpg" alt="Fairy Light 2"><p class="price">£4</p></div>
       <div class="product-item"><img src="fairylight3.jpg" alt="Fairy Light 3"><p class="price">£4</p></div>
       <div class="product-item"><img src="fairylight4.jpg" alt="Fairy Light 4"><p class="price">£4</p></div>
       <div class="product-item"><img src="fairylight5.jpg" alt="Fairy Light 5"><p class="price">£4</p></div>
       <div class="product-item"><img src="fairylight6.jpg" alt="Fairy Light 6"><p class="price">£4</p></div>
+    </div>
 
-      <!-- Bells -->
+    <!-- Bells -->
+    <div class="product-gallery">
       <div class="product-item"><img src="bell1.jpg" alt="Bell 1"><p class="price">£4</p></div>
       <div class="product-item"><img src="bell2.jpg" alt="Bell 2"><p class="price">£4</p></div>
       <div class="product-item"><img src="bell3.jpg" alt="Bell 3"><p class="price">£4</p></div>
       <div class="product-item"><img src="bell4.jpg" alt="Bell 4"><p class="price">£4</p></div>
       <div class="product-item"><img src="bell5.jpg" alt="Bell 5"><p class="price">£4</p></div>
     </div>
+
   </div>
 
 </section>
