@@ -472,9 +472,18 @@ footer {
   <p>&copy; 2025 CC Resin Studio. All Rights Reserved.</p>
 </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.location.hash === "#products") {
+    window.scrollBy(0, -120);  // scroll upward so header stays visible
+  }
+});
+</script>
+  
 </body>
 
   
+
 
 
 
