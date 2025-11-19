@@ -475,7 +475,13 @@ footer {
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   if (window.location.hash === "#products") {
-    window.scrollBy(0, -120);  // scroll upward so header stays visible
+    
+    // Wait for the browser's built-in jump to finish
+    setTimeout(() => {
+      const section = document.querySelector("#products");
+      const offset = section.getBoundingClientRect().top + window.scrollY - 140;
+      window.scrollTo({ top: offset, behavior: "instant" });
+    }, 150);
   }
 });
 </script>
@@ -483,6 +489,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </body>
 
   
+
 
 
 
