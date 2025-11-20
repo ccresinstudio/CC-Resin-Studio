@@ -492,28 +492,26 @@ footer {
   <p>&copy; 2025 CC Resin Studio. All Rights Reserved.</p>
 </footer>
 
+<!-- Back to Top Button -->
+<a href="#" id="back-to-top">↑ Top</a>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.getElementById("backToTop");
+  const backToTop = document.getElementById("back-to-top");
 
+  // Show/hide back to top button on scroll
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
+    backToTop.style.display = (window.scrollY > 300) ? "block" : "none";
   });
 
-  btn.addEventListener("click", () => {
+  // Smooth scroll to top
+  backToTop.addEventListener("click", (e) => {
+    e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-});
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+
+  // Jump to products if hash is #products
   if (window.location.hash === "#products") {
-    
-    // Wait for the browser's built-in jump to finish
     setTimeout(() => {
       const section = document.querySelector("#products");
       const offset = section.getBoundingClientRect().top + window.scrollY - 140;
@@ -522,13 +520,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 </script>
-
-  <!-- Back to Top Button -->
-<a href="#" id="back-to-top">↑ Top</a>
-  
 </body>
 
   
+
 
 
 
