@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CC Resin Studio | Halloween Resin Collection</title>
-  <meta name="description" content="Explore CC Resin Studio's Halloween resin collection — coasters, trays, ghosts, pumpkin pots, cauldrons, and more. Perfect for seasonal décor and gifts.">
+  <title>CC Resin Studio | Halloween Collection</title>
+  <meta name="description" content="CC Resin Studio Halloween collection: coasters, trinket trays, ghosts, pumpkins, spider tealight holders, cauldrons, large bowls, and trays.">
 
   <!-- Font Awesome for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-    /* --- General Styles (same as homepage) --- */
+    /* --- General Body and Background --- */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -19,6 +19,7 @@
       color: #333;
     }
 
+    /* --- Header --- */
     header {
       display: flex;
       align-items: center;
@@ -27,32 +28,17 @@
       color: white;
       padding: 1rem;
     }
+    header img { height: 80px; margin-right: 1rem; }
+    header div { text-align: left; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 0; font-style: italic; }
 
-    header img {
-      height: 80px;
-      margin-right: 1rem;
-    }
-
-    header div {
-      text-align: left;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    header p {
-      margin: 0;
-      font-style: italic;
-    }
-
+    /* --- Navigation --- */
     nav {
       background: #222;
       text-align: center;
       padding: 0.5rem;
     }
-
     nav a {
       color: white !important;
       margin: 0 1rem;
@@ -60,12 +46,12 @@
       font-weight: bold;
       transition: color 0.3s ease, text-decoration 0.3s ease;
     }
-
     nav a:hover {
       color: #6a0dad !important;
       text-decoration: underline;
     }
 
+    /* --- Section Styling --- */
     section {
       padding: 40px 20px;
       text-align: center;
@@ -73,13 +59,13 @@
       border-radius: 12px;
       margin-bottom: 20px;
     }
-
     section h2 {
       font-size: 2em;
       color: #6a0dad;
       margin-bottom: 20px;
     }
 
+    /* --- Product Grid --- */
     .products {
       display: flex;
       flex-direction: column;
@@ -143,12 +129,45 @@
       text-align: center;
     }
 
+    /* --- Footer --- */
     footer {
       background: #3d3d3d;
       color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
+    }
+
+    /* --- Social Media Icons --- */
+    .social-icons a, .contact-link {
+      color: #3d3d3d !important;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    .social-icons a:hover, .contact-link:hover {
+      color: #6a0dad !important;
+      text-decoration: underline;
+    }
+
+    /* --- Back to Top Button --- */
+    #back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #6a0dad;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: none;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+    #back-to-top:hover {
+      background-color: #9b59b6;
     }
   </style>
 </head>
@@ -263,7 +282,7 @@
   </div>
 
 </section>
-  
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 CC Resin Studio. All rights reserved.</p>
@@ -291,3 +310,4 @@
 
 </body>
 </html>
+  
