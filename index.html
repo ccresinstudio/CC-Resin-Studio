@@ -225,6 +225,27 @@ footer {
   color: #6a0dad !important;
   text-decoration: underline;
 }
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #6a0dad;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  display: none; /* hidden by default */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+  transform: translateY(-3px);
+}
 </style>
 
 </head>
@@ -489,6 +510,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </body>
 
   
+
 
 
 
