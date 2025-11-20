@@ -316,5 +316,24 @@
 
   <!-- Back to Top Button -->
 <a href="#" id="back-to-top">↑ Top</a>
+
+  <script>
+  // Show/hide back to top button
+  const backToTop = document.getElementById("back-to-top");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  // Smooth scroll to top
+  backToTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+  
 </body>
 </html>
