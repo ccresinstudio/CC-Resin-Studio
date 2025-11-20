@@ -52,14 +52,30 @@
       text-align: center;
     }
 
-    /* --- Christmas heading band --- */
-    .product h2 {
-      font-size: 2em;
-      color: #fff;
-      background: linear-gradient(to bottom, #d8c2ff, #b785ff);
-      padding: 20px;
+    /* Collection heading band */
+    .collection-header {
+      background: linear-gradient(to right, #d8c2ff, #b785ff);
+      padding: 20px 0;
+      text-align: center;
       border-radius: 12px;
       margin-bottom: 20px;
+    }
+
+    .collection-header h2 {
+      color: white;
+      font-size: 2em;
+      margin: 0;
+    }
+
+    section h3 {
+      color: #6a0dad;
+      margin-bottom: 16px;
+    }
+
+    section h4 {
+      color: #6a0dad;
+      margin-top: 30px;
+      margin-bottom: 10px;
     }
 
     .product {
@@ -123,12 +139,6 @@
       margin-top: 2rem;
     }
 
-    h4 {
-      color: #6a0dad;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-
     /* --- Back to Top Button --- */
     #back-to-top {
       position: fixed;
@@ -144,7 +154,6 @@
       z-index: 1000;
       transition: background-color 0.3s ease;
     }
-
     #back-to-top:hover {
       background-color: #9b59b6;
     }
@@ -173,7 +182,8 @@
 
 <section id="christmas">
 
-  <div class="product">
+  <!-- Collection Heading -->
+  <div class="collection-header">
     <h2>Christmas Collection</h2>
   </div>
 
@@ -358,6 +368,7 @@
 
 </section>
 
+
 <footer>
   © 2025 CC Resin Studio — Handmade with Love
 </footer>
@@ -366,16 +377,23 @@
 <a href="#" id="back-to-top">↑ Top</a>
 
 <script>
+  // Show/hide back to top button
   const backToTop = document.getElementById("back-to-top");
   window.addEventListener("scroll", () => {
-    backToTop.style.display = (window.scrollY > 300) ? "block" : "none";
+    if (window.scrollY > 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
   });
 
+  // Smooth scroll to top
   backToTop.addEventListener("click", (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 </script>
+
 </body>
 </html>
-
+  // Smooth scroll to top
