@@ -176,7 +176,7 @@
   padding-left: 1.2em; /* space for star */
 }
 
-/* Add tiny star before the text */
+    /* Add tiny star before the text (slightly bigger) */
 .product-description::before {
   content: "★"; /* Unicode star */
   color: #fff; /* base star color */
@@ -185,7 +185,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 1em;
+  font-size: 1.3em; /* increased from 1em to 1.3em */
   text-shadow:
     0 0 1px #fff,
     1px 1px 1px #dda0dd,
@@ -193,6 +193,7 @@
     1px -1px 1px #9370db,
     -1px 1px 1px #9370db;
 }
+
 
 /* Star sparkle animation */
 @keyframes sparkleStar {
