@@ -162,18 +162,75 @@
       background-color: #9b59b6;
     }
 
-/* Sharper, sparkling effect for Christmas product descriptions */
+/* Sparkling effect for Christmas product descriptions with tiny star at start */
 .product-description {
   font-style: italic;
   font-size: 1rem;
-  font-weight: 600; /* bolder for clarity */
+  font-weight: 600;
   text-align: center;
   margin: 10px 0;
   color: #b19cd9; /* base lilac color */
   position: relative;
   animation: sparkleText 2s infinite;
+  display: inline-block; /* for pseudo-element alignment */
+  padding-left: 1.2em; /* space for star */
 }
 
+/* Add tiny star before the text */
+.product-description::before {
+  content: "★"; /* Unicode star */
+  color: #fff; /* base star color */
+  margin-right: 0.3em;
+  animation: sparkleStar 2s infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1em;
+  text-shadow:
+    0 0 1px #fff,
+    1px 1px 1px #dda0dd,
+    -1px -1px 1px #dda0dd,
+    1px -1px 1px #9370db,
+    -1px 1px 1px #9370db;
+}
+
+/* Star sparkle animation */
+@keyframes sparkleStar {
+  0%, 100% {
+    text-shadow:
+      0 0 1px #fff,
+      1px 1px 1px #dda0dd,
+      -1px -1px 1px #dda0dd,
+      1px -1px 1px #9370db,
+      -1px 1px 1px #9370db;
+  }
+  25% {
+    text-shadow:
+      0 0 1px #fff,
+      2px 2px 1px #dda0dd,
+      -2px -2px 1px #dda0dd,
+      1px -1px 1px #9370db,
+      -1px 1px 1px #9370db;
+  }
+  50% {
+    text-shadow:
+      0 0 1px #fff,
+      1px 0 1px #dda0dd,
+      -1px 1px 1px #dda0dd,
+      2px 2px 1px #9370db,
+      0 0 1px #9370db;
+  }
+  75% {
+    text-shadow:
+      0 0 1px #fff,
+      1px -1px 1px #dda0dd,
+      -1px 1px 1px #dda0dd,
+      1px 1px 1px #9370db,
+      0 0 1px #9370db;
+  }
+}
+
+/* Text sparkle animation (sharpened from before) */
 @keyframes sparkleText {
   0%, 100% {
     text-shadow: 
@@ -196,7 +253,6 @@
       -1px 1px 1px #9370db, 0 0 1px #9370db;
   }
 }
-    
 
   </style>
 </head>
