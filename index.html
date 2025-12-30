@@ -290,29 +290,29 @@ footer {
 
 <!-- About Us Section -->
 
-<section id="about">
-  <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px; gap: 15px;">
-    <!-- Left image -->
-    <img src="left.jpg" alt="Resin Art" style="
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    ">
+<section id="about" style="max-width: 1000px; margin: 20px auto; padding: 20px; background: linear-gradient(to bottom, #e6d9ff, #d4b3ff); border-radius: 12px;">
+  <div style="display: flex; align-items: flex-start; justify-content: center; gap: 20px; flex-wrap: wrap;">
 
-    <!-- Title -->
-    <h2 style="margin: 0; color: #6a0dad; font-size: 2em;">About Us</h2>
+    <!-- Left Image -->
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="about-left.jpg" alt="Resin Art" style="width: 100%; max-width: 300px; height: auto; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    </div>
 
-    <!-- Right image -->
-    <img src="right.jpg" alt="Studio" style="
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    ">
+    <!-- Text Column -->
+    <div style="flex: 2 1 400px; text-align: left; min-width: 250px;">
+      <h2 style="color: #6a0dad; font-size: 2em; margin-top: 0;">About Us</h2>
+      <p>Welcome to CC Resin Studio! We specialise in creating <strong>unique handmade resin art and gifts</strong> with care and creativity.</p>
+      <p>From colourful coasters and trinket trays to jewellery and decorative home pieces, each item is handcrafted to make a special impression.</p>
+      <p>Whether it’s for personal use or as a thoughtful gift, our creations are perfect for adding a touch of charm to any home.</p>
+    </div>
+
+    <!-- Right Image -->
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="about-right.jpg" alt="Studio" style="width: 100%; max-width: 300px; height: auto; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    </div>
+
   </div>
+</section>
 
   <!-- Text content -->
   <p>Welcome to CC Resin Studio! We specialise in creating <strong>unique handmade resin art and gifts</strong> with care and creativity.</p>
@@ -672,6 +672,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </body>
 
   
+
 
 
 
