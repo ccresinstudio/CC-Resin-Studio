@@ -306,15 +306,16 @@ footer {
   color: #6a0dad;
 }
 
-/* Side images scale naturally, max height keeps them uniform */
+/* Square frame for side images, full image visible */
 .title-img {
-  max-height: 90px;      /* controls height */
-  width: auto;           /* width scales automatically to keep aspect ratio */
+  width: 90px;
+  height: 90px;
+  object-fit: contain;      /* ensures full image is visible */
   border-radius: 12px;
+  background-color: white;  /* fills empty space */
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  display: block;
+  padding: 5px;             /* gives breathing room inside the square */
 }
-
 </style>
 
 </head>
@@ -720,6 +721,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </body>
 
   
+
 
 
 
