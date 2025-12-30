@@ -3,12 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonials | CC Resin Studio</title>
+  <title>CC Resin Studio | Testimonials</title>
+  <meta name="description" content="See what our customers say about CC Resin Studio's handmade resin art and custom creations.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Testimonials Grid (matches product gallery) */
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .testimonial {
+      background: #f3e8ff;
+      border: 2px solid #d3b4ff;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 300px;
+      flex: 1 1 250px; /* responsive: minimum width 250px */
+      text-align: center;
+      color: #4b0082;
+      font-size: 1.05rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .testimonial:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .testimonial p {
+      margin: 0.5rem 0;
+    }
+
+    #testimonials h2 {
+      text-align: center;
+      font-size: 2em;
+      color: #6a0dad;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
-
 <body>
-
   <!-- Header -->
   <header>
     <img src="./logo.png" alt="CC Resin Studio Logo">
@@ -18,63 +58,69 @@
     </div>
   </header>
 
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    Limited Time Offer — 20% OFF All Orders
+  </div>
+
   <!-- Navigation -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="children.html">Children's</a>
+    <a href="index.html">About</a>
+    <a href="index.html#products">Products</a>
+    <a href="autumn.html">Autumn</a>
+    <a href="halloween.html">Halloween</a>
+    <a href="children.html">Children</a>
     <a href="christmas.html">Christmas</a>
-    <a href="home-decor.html">Home Décor</a>
-    <a href="keyrings.html">Keyrings</a>
     <a href="contact.html">Contact</a>
     <a href="testimonials.html" class="active">Testimonials</a>
   </nav>
 
-  <!-- Page Title -->
-  <section class="page-title">
-    <h2>What Our Customers Say</h2>
-    <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
-      We love creating unique resin pieces that bring joy to our customers.
-      Here are some kind words people have shared about their experience.
-    </p>
-  </section>
-
   <!-- Testimonials Section -->
-  <section class="product-grid">
-
-    <!-- Testimonial 1 -->
-    <div class="product-card" style="padding: 20px; text-align: left;">
-      <h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
-      <p>
-        “I requested a custom order and it turned out even better than I imagined!
-        The colours were perfect and the quality is amazing. Highly recommend!”
-      </p>
-      <p><strong>— Sarah M.</strong></p>
+  <section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Absolutely loved my custom order! Highly recommend."</p>
+        <p>- Jane D.</p>
+      </div>
+      <div class="testimonial">
+        <p>"Fast, friendly, and exactly what I wanted. Amazing work!"</p>
+        <p>- Alex P.</p>
+      </div>
+      <div class="testimonial">
+        <p>"The quality exceeded my expectations. I’ll be back for sure!"</p>
+        <p>- Morgan S.</p>
+      </div>
+      <div class="testimonial">
+        <p>"Beautiful craftsmanship and attention to detail. Loved it!"</p>
+        <p>- Emma L.</p>
+      </div>
     </div>
-
-    <!-- Add more testimonials here -->
-    <div class="product-card" style="padding: 20px; text-align: left;">
-      <h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
-      <p>
-        “Beautiful craftsmanship. The resin piece I ordered was gorgeous and arrived
-        quickly. Will definitely be ordering again!”
-      </p>
-      <p><strong>— Rebecca H.</strong></p>
-    </div>
-
-    <div class="product-card" style="padding: 20px; text-align: left;">
-      <h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
-      <p>
-        “Wonderful customer service and stunning artwork. Thank you for the perfect gift!”
-      </p>
-      <p><strong>— Daniel P.</strong></p>
-    </div>
-
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 CC Resin Studio | Handmade Resin Art & Gifts</p>
+    <p>&copy; 2025 CC Resin Studio. All Rights Reserved.</p>
   </footer>
 
+  <!-- Back to Top Button -->
+  <a href="#" id="back-to-top">↑ Top</a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const backToTop = document.getElementById("back-to-top");
+
+      // Show/hide back to top button on scroll
+      window.addEventListener("scroll", () => {
+        backToTop.style.display = (window.scrollY > 300) ? "block" : "none";
+      });
+
+      // Smooth scroll to top
+      backToTop.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  </script>
 </body>
 </html>
