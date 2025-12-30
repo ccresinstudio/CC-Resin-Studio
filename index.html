@@ -310,10 +310,13 @@ footer {
 .title-img {
   width: 90px;
   height: 90px;
-  object-fit: cover;
-  border-radius: 12px; /* nice soft rounded edges */
+  object-fit: contain; /* ← shows whole image */
+  border-radius: 12px;
+  background: white; /* helps prevent weird empty shapes */
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 4px; /* gives breathing room so full image fits */
 }
+
 </style>
 
 </head>
@@ -719,6 +722,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </body>
 
   
+
 
 
 
