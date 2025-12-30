@@ -99,7 +99,7 @@ section h2 {
   color: #6a0dad; /* matches logo */
   margin-bottom: 20px;
 }
-
+  
 /* --- Product Grid (Main Products) --- */
 .products {
   display: flex;
@@ -255,6 +255,39 @@ footer {
 }
 #back-to-top:hover {
   background-color: #9b59b6;
+}
+
+/* --- About Us Section --- */
+.about-us {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* keeps responsive */
+}
+
+.about-img {
+  width: 200px;     /* Make images larger */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  margin-bottom: 12px;
+  color: #6a1b9a;
 }
 </style>
 
@@ -656,6 +689,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </body>
 
   
+
 
 
 
