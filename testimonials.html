@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CC Resin Studio | Testimonials</title>
   
-  <!-- Embedded Styles (matches your other pages) -->
+  <!-- Embedded Styles -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -68,51 +68,25 @@
       margin-bottom: 20px;
     }
 
-    .product {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      width: 100%;
-      box-sizing: border-box;
-      text-align: center;
-      display: block;
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-
     .product-gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: flex-start;
       gap: 20px;
       margin: 16px auto 0;
-      padding: 20px;
-      border-radius: 12px;
-      background: linear-gradient(to bottom, #d8c2ff, #b785ff);
-      width: 100%;
+      padding: 0;
       max-width: 900px;
       box-sizing: border-box;
     }
 
     .product-item {
-      flex: 0 0 250px;
-      max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
-      box-sizing: border-box;
       text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .product-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      padding: 0;               /* tightly fit image */
+      background: none;          /* no extra frame */
+      max-width: 150px;          /* matches image width */
     }
 
     .product-item img {
@@ -120,11 +94,12 @@
       height: 150px;
       object-fit: cover;
       border-radius: 12px;
-      margin-bottom: 12px;
+      display: block;
+      margin-bottom: 8px;
     }
 
     .product-item p {
-      margin: 8px 0;
+      margin: 4px 0;
       color: #4b0082;
     }
 
@@ -182,28 +157,26 @@
 <!-- Testimonials Section -->
 <section id="testimonials">
   <h2>Testimonials</h2>
-  <div class="product">
-    <div class="product-gallery">
-      
-      <div class="product-item">
-        <img src="test1.jpg" alt="Jo">
-        <p>"The coasters look beautiful, I'm excited to give them to my sister."</p>
-        <p>- Jo</p>
-      </div>
-
-      <div class="product-item">
-        <img src="test2.jpg" alt="Claire">
-        <p>"The quality exceeded my expectations. I’ll be back for sure!"</p>
-        <p>- Claire</p>
-      </div>
-
-      <div class="product-item">
-        <img src="test3.jpg" alt="Andy">
-        <p>"Beautiful craftsmanship and attention to detail. Loved it!"</p>
-        <p>- Andy</p>
-      </div>
-
+  <div class="product-gallery">
+    
+    <div class="product-item">
+      <img src="test1.jpg" alt="Jo">
+      <p>"The coasters look beautiful, I'm excited to give them to my sister."</p>
+      <p>- Jo</p>
     </div>
+
+    <div class="product-item">
+      <img src="test2.jpg" alt="Claire">
+      <p>"The quality exceeded my expectations. I’ll be back for sure!"</p>
+      <p>- Claire</p>
+    </div>
+
+    <div class="product-item">
+      <img src="test3.jpg" alt="Andy">
+      <p>"Beautiful craftsmanship and attention to detail. Loved it!"</p>
+      <p>- Andy</p>
+    </div>
+
   </div>
 </section>
 
