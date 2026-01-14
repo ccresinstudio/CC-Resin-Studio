@@ -6,7 +6,6 @@
   <title>CC Resin Studio | Spring Collection</title>
 
   <style>
-    <style>
     /* --- General Body and Background --- */
     body {
       font-family: Arial, sans-serif;
@@ -138,43 +137,12 @@
       margin-top: 2rem;
     }
 
-    .social-icons a, .contact-link {
-      color: #3d3d3d !important;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease, text-decoration 0.3s ease;
+    /* Flower bullet points for Spring Collection */
+    .spring .product h3::before {
+      content: "🌸 ";
+      font-size: 1.2em;
+      margin-right: 6px;
     }
-
-    .social-icons a:hover, .contact-link:hover {
-      color: #6a0dad !important;
-      text-decoration: underline;
-    }
-
-  /* --- Back to Top Button --- */
-#back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #6a0dad;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  display: none;
-  z-index: 1000;
-  transition: background-color 0.3s ease;
-}
-#back-to-top:hover {
-  background-color: #9b59b6;
-}
-    
-/* Add flower before each product title in Spring Collection */
-.spring .product h3::before {
-  content: "🌸 ";          /* Flower emoji */
-  font-size: 1.2em;        /* size of the flower */
-  margin-right: 6px;       /* space between flower and title */
-}
   </style>
 
 </head>
@@ -198,36 +166,77 @@
   <a href="children.html">Children</a>
   <a href="christmas.html">Christmas</a>
   <a href="valentines.html">Valentine’s Day</a>
-
   <a href="contact.html">Contact</a>
 </nav>
 
-<section>
+<section class="spring">
   <h2>Spring Collection</h2>
 
   <div class="products">
-    <!-- Example Product Section -->
+
+    <!-- Spring Bauble Decorations -->
     <div class="product">
-      <h3>Spring Flowers</h3>
-      <p>Bright and colorful resin flowers to celebrate spring.</p>
+      <h3>Spring Bauble Decorations</h3>
+      <p>Delicate resin baubles to brighten your home this spring.</p>
 
       <div class="product-gallery">
         <div class="product-item">
-          <img src="spring1.jpg" alt="Pink Resin Flower">
+          <img src="bauble1.jpg" alt="Pink Spring Bauble">
           <p class="price">£10</p>
         </div>
-
         <div class="product-item">
-          <img src="spring2.jpg" alt="Yellow Resin Flower">
+          <img src="bauble2.jpg" alt="Yellow Spring Bauble">
           <p class="price">£12</p>
         </div>
-
         <div class="product-item">
-          <img src="spring3.jpg" alt="Blue Resin Flower">
+          <img src="bauble3.jpg" alt="Green Spring Bauble">
           <p class="price">£15</p>
         </div>
       </div>
     </div>
+
+    <!-- Floral Dishes -->
+    <div class="product">
+      <h3>Floral Dishes</h3>
+      <p>Beautiful resin dishes decorated with spring flowers, perfect for small treats or jewelry.</p>
+
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="dish1.jpg" alt="Pink Floral Dish">
+          <p class="price">£8</p>
+        </div>
+        <div class="product-item">
+          <img src="dish2.jpg" alt="Yellow Floral Dish">
+          <p class="price">£10</p>
+        </div>
+        <div class="product-item">
+          <img src="dish3.jpg" alt="Blue Floral Dish">
+          <p class="price">£12</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coasters -->
+    <div class="product">
+      <h3>Coasters</h3>
+      <p>Handmade resin coasters with colorful spring designs.</p>
+
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="coaster1.jpg" alt="Pink Spring Coaster">
+          <p class="price">£7</p>
+        </div>
+        <div class="product-item">
+          <img src="coaster2.jpg" alt="Yellow Spring Coaster">
+          <p class="price">£9</p>
+        </div>
+        <div class="product-item">
+          <img src="coaster3.jpg" alt="Blue Spring Coaster">
+          <p class="price">£11</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
