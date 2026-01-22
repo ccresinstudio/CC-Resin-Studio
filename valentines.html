@@ -252,5 +252,19 @@
   <p>&copy; 2025 CC Resin Studio. All rights reserved.</p>
 </footer>
 
+  <a href="#" id="back-to-top">↑</a>
+
+  <script>
+  const backToTopButton = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+</script>
+
 </body>
 </html>
