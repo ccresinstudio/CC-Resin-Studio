@@ -1,1 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CC Resin Studio | Easter</title>
 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e6d9ff, #d4b3ff);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #3d3d3d;
+      color: white;
+      padding: 1rem;
+    }
+
+    header img {
+      height: 80px;
+      margin-right: 1rem;
+    }
+
+    nav {
+      background: #222;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white !important;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #6a0dad !important;
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(to bottom, #e6d9ff, #d4b3ff);
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #6a0dad;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      background: linear-gradient(to bottom, #f8e1ff, #e1c4ff);
+      margin-top: 15px;
+    }
+
+    .product-item {
+      width: 180px;
+      background: white;
+      border-radius: 10px;
+      padding: 12px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+
+    .product-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .price {
+      color: #9b59b6;
+      font-weight: bold;
+      margin-top: 6px;
+    }
+
+    footer {
+      background: #3d3d3d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Easter egg bullet before section titles */
+    .easter .product h3::before {
+      content: "🥚 ";
+      font-size: 1.2em;
+      margin-right: 6px;
+    }
+
+    /* Back to Top Button */
+    #back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #6a0dad;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: none;
+      z-index: 1000;
+    }
+
+    #back-to-top:hover {
+      background-color: #9b59b6;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="CC Resin Studio Logo">
+  <div>
+    <h1>CC Resin Studio</h1>
+    <p>Handmade Resin Art & Custom Creations</p>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">About</a>
+  <a href="index.html#products">Products</a>
+  <a href="spring.html">Spring</a>
+  <a href="easter.html">Easter</a>
+  <a href="autumn.html">Autumn</a>
+  <a href="halloween.html">Halloween</a>
+  <a href="christmas.html">Christmas</a>
+  <a href="valentines.html">Valentine’s Day</a>
+  <a href="jewellery.html">Jewellery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="easter">
+  <h2>Easter Collection</h2>
+
+  <div class="products">
+
+    <!-- Easter Hanging Decorations -->
+    <div class="product">
+      <h3>Easter Hanging Decorations</h3>
+      <p>Sweet handmade resin decorations perfect for Easter displays.</p>
+
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="easterhang1.jpg" alt="Easter Hanging Decoration 1">
+          <p class="price">£8</p>
+        </div>
+        <div class="product-item">
+          <img src="easterhang2.jpg" alt="Easter Hanging Decoration 2">
+          <p class="price">£10</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Easter Bunnies -->
+    <div class="product">
+      <h3>Easter Bunnies</h3>
+      <p>Adorable resin bunnies, perfect for Easter gifts.</p>
+
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="easterbunny1.jpg" alt="Easter Bunny 1">
+          <p class="price">£12</p>
+        </div>
+        <div class="product-item">
+          <img src="easterbunny2.jpg" alt="Easter Bunny 2">
+          <p class="price">£15</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 CC Resin Studio. All rights reserved.</p>
+</footer>
+
+<a href="#" id="back-to-top">↑ Top</a>
+
+<script>
+  const backToTopButton = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
